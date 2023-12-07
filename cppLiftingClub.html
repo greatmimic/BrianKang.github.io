@@ -6,12 +6,13 @@
 -->
 <html>
 	<head>
-		<title>CPP Lifting Club (Work in Progress)</title>
+		<title>CPP Lifting Club </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -52,17 +53,74 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>CPP Lifting Club (Work in Progress)</h1>
-							<span class="image main"><img src="images/cppLiftingClub.jpg" alt="" /></span>
+							<h1>CPP Lifting Club </h1>
+							<div class="slideshow-container">
+
+								<!-- Full-width images with number and caption text -->
+								<div class="mySlides fade">
+								  <div class="numbertext">1 / 4</div>
+								  <img src="/images/cppLifting1.PNG" style="width:100%">
+								  <div class="text">Login Screen</div>
+								</div>
+							  
+								<div class="mySlides fade">
+								  <div class="numbertext">2 / 4</div>
+								  <img src="/images/cppLifting2.PNG" style="width:100%">
+								  <div class="text">Member Dashboard</div>
+								</div>
+							  
+								<div class="mySlides fade">
+								  <div class="numbertext">3 / 4</div>
+								  <img src="/images/cppLifting3.PNG" style="width:100%">
+								  <div class="text">Reservation Modal</div>
+								</div>
+
+								<div class="mySlides fade">
+									<div class="numbertext">4 / 4</div>
+									<img src="/images/cppLifting4.PNG" style="width:100%">
+									<div class="text">My Reservations</div>
+								  </div>
+							  
+								<!-- Next and previous buttons -->
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							  </div>
+							  <br>
+							  
+							  <!-- The dots/circles -->
+							  <div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1)"></span>
+								<span class="dot" onclick="currentSlide(2)"></span>
+								<span class="dot" onclick="currentSlide(3)"></span>
+								<span class="dot" onclick="currentSlide(4)"></span>
+							  </div>
+
+
+							<p>A website specifically built for the Cal Poly Pomona Power Lifting Club. Displays an interactive menu for members to resrve equipments to use.
+								The admin dashboard provides administrators to manage users and see reservations created by the members of the club. </p>
+
+								<p> Further improvements are being worked on to enhance the following: 
+									<li>
+										Security across the program. Such as hiding the firebase config files from client side.
+									</li>
+									<li>
+										Subscription management. Directing unsubscribed users to a different landing page.
+									</li>
+									<li>
+										Paid Firebase plan should allow dynamic control over reservations and other parts of the database with Firebase's Realtime Firestore.
+									</li>
+								</p>
+							
+							<br>
 							<p>Key Technology Used to Create the Application Inlude: </p>
 							<p><strong>AWS EC2 for deployment</strong></p>
 							<p><strong>Github Actions for CI/CD workflow</strong></p>
 							<p><strong>React and Express from NodeJS to create the Frontend and Backend</strong></p>
 							<p><strong>Firebase connections to control authorization of user registration and logins</strong></p>
-							<p><strong>MaterialUI Library for various page looks and UI</strong></p>
+							
 							
 							<p>Go see the website deployed</p>
-							<a href="http://18.144.107.141:8080/">
+							<a href="http://18.144.107.141/">
 								<i class="fas fa-globe-americas fa-lg"></i>
 							</a>
 
@@ -101,6 +159,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/slideLogic.js"></script>
 
 	</body>
 </html>
